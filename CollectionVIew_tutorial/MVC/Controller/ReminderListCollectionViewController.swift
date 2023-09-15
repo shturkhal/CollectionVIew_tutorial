@@ -15,19 +15,12 @@ class ReminderListCollectionViewController: UICollectionViewController {
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, String>
     var dataSource: DataSource!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let listLayout = listLayout()
         collectionView.collectionViewLayout = listLayout
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
-        // Do any additional setup after loading the view.
         let cellRegistration = UICollectionView.CellRegistration {
             (cell: UICollectionViewListCell, indexPath: IndexPath, itemIdentifier: String) in
             let reminder = Reminder.sampleData[indexPath.item]
@@ -47,8 +40,6 @@ class ReminderListCollectionViewController: UICollectionViewController {
         
         collectionView.dataSource = dataSource
     }
-    
-    
     private func listLayout() -> UICollectionViewCompositionalLayout {
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .grouped)
         listConfiguration.showsSeparators = false
