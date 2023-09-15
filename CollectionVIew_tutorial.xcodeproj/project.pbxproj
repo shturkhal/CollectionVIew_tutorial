@@ -61,7 +61,6 @@
 				7B5BB8AA2AB44FC300B62AAB /* MVC */,
 				7B5BB8962AB36F9700B62AAB /* AppDelegate.swift */,
 				7B5BB8982AB36F9700B62AAB /* SceneDelegate.swift */,
-				7B5BB8B02AB4518C00B62AAB /* ReminderListCollectionViewController.swift */,
 				7B5BB89C2AB36F9700B62AAB /* Main.storyboard */,
 				7B5BB89F2AB36F9900B62AAB /* Assets.xcassets */,
 				7B5BB8A12AB36F9900B62AAB /* LaunchScreen.storyboard */,
@@ -98,6 +97,7 @@
 		7B5BB8AD2AB44FF500B62AAB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7B5BB8B02AB4518C00B62AAB /* ReminderListCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
